@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar"
 import Intro from './components/Intro'
 import Skills from './components/Skills'
 import Contact from "./components/Contact"
+import Footer from "./components/Footer";
+import Projects from './components/Projects'
+
 
 const App = () => {
   return (
@@ -10,7 +13,9 @@ const App = () => {
       <Navbar />
       <Intro />
       <Skills />
+      <Projects />
       <Contact />
+      <Footer />
     </div>
   )
 }

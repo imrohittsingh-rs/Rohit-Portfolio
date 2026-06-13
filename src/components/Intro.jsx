@@ -1,8 +1,9 @@
 import React from "react";
 import pfp from "../assets/pfp.png";
-import resumePdf  from "../assets/rohit_resume.pdf";
+import resumePdf from "../assets/rohit_resume.pdf";
 import resume from "../assets/resume.png";
 import { Link } from "react-scroll";
+import { motion } from "motion/react";
 
 const Intro = () => {
   return (
@@ -32,7 +33,21 @@ const Intro = () => {
           </p>
 
           <div className="flex justify-center md:justify-start">
-            <button className="bg-white text-black font-semibold rounded-full shadow-lg hover:bg-gray-100 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer">
+            <motion.button
+              initial={{
+                x: -80,
+                opacity: 0,
+              }}
+              animate={{
+                x: 0,
+                opacity: 1,
+              }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+              }}
+              className="bg-white text-black font-semibold rounded-full shadow-lg hover:bg-gray-100 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer"
+            >
               <a
                 className="flex items-center gap-3 px-6 py-3"
                 href={resumePdf}
@@ -45,7 +60,7 @@ const Intro = () => {
                 />
                 <span>View Resume</span>
               </a>
-            </button>
+            </motion.button>
           </div>
         </div>
 
@@ -55,7 +70,7 @@ const Intro = () => {
             <img
               src={pfp}
               alt="profile-pic"
-              className="w-full h-full object-cover object-top rounded-full border-2 border-yellow-300 drop-shadow-[0_0_15px_#facc15]"
+              className="w-full h-full object-cover object-top rounded-full border-2 border-yellow-400 shadow-lg shadow-yellow-400/20 transition-transform duration-300 hover:scale-105 drop-shadow-[0_0_30px_rgba(250,204,21,0.3)]"
             />
           </div>
         </div>

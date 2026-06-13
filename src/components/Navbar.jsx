@@ -3,6 +3,8 @@ import { Link } from "react-scroll";
 import favicon from "../assets/favicon.png";
 import contact from "../assets/contact.png";
 
+const active = "text-yellow-300 border-yellow-300"
+
 const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between px-16 py-4 bg-gray-900">
@@ -26,7 +28,9 @@ const Navbar = () => {
           smooth={true}
           duration={500}
           spy={true}
-          className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300 active:text-yellow-300 active:border-yellow-300"
+          offset={-86}
+          activeClass={active}
+          className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300"
         >
           Home
         </Link>
@@ -36,7 +40,8 @@ const Navbar = () => {
           duration={500}
           offset={-16}
           spy={true}
-          className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300 active:text-yellow-300 active:border-yellow-300"
+          activeClass={active}
+          className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300"
         >
           About
         </Link>
@@ -46,7 +51,8 @@ const Navbar = () => {
           duration={500}
           offset={-16}
           spy={true}
-          className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300 active:text-yellow-300 active:border-yellow-300"
+          activeClass={active}
+          className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300"
         >
           Skills
         </Link>
@@ -56,7 +62,8 @@ const Navbar = () => {
           duration={500}
           offset={-16}
           spy={true}
-          className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300 active:text-yellow-300 active:border-yellow-300"
+          activeClass={active}
+          className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300"
         >
           Projects
         </Link>
@@ -67,7 +74,8 @@ const Navbar = () => {
           <Link
             to="contact"
             smooth={true}
-            duration={300}
+            duration={500}
+            spy={true}
             className="flex items-center gap-3 px-6 py-3"
           >
             <img

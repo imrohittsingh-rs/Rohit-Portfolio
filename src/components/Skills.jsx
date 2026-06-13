@@ -83,7 +83,7 @@ const Skills = () => {
     <section className="font-poppins flex flex-col justify-center py-20 px-6 md:px-14" id="skills">
       <h2 className="text-white font-extrabold text-3xl sm:text-4xl md:text-5xl text-center mb-16 tracking-tight">
         🚀 My{" "}
-        <span className="text-yellow-400 drop-shadow-[0_0_15px_rgba(250,204,21,0.4)]">
+        <span className="text-yellow-400 drop-shadow-[0_0_15px_rgba(250,204,21,0.15)]">
           Tech Stack
         </span>
       </h2>
