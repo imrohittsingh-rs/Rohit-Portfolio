@@ -1,4 +1,6 @@
-import React from 'react'
+import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const ProjectCards = ({ projectsData }) => {
   return (
@@ -8,11 +10,27 @@ const ProjectCards = ({ projectsData }) => {
           key={index}
           className="bg-gray-800 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] overflow-hidden hover:scale-105 hover:shadow-[0_8px_40px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out"
         >
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-48 object-cover"
-          />
+          <div className="relative group w-full overflow-hidden">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-48 object-cover group-hover:blur-md transition-all duration-200 ease-in"
+            />
+            <a
+              href={project.source_code_link}
+              target="_blank"
+              className="absolute top-[50%] left-[40%] text-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out hover:scale-110"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href={project.demo_link}
+              target="_blank"
+              className="absolute top-[50%] left-[55%] text-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out hover:scale-110"
+            >
+              <FaArrowUpRightFromSquare />
+            </a>
+          </div>
           <div className="p-6">
             <h3 className="text-xl font-bold text-white mb-2">
               {project.title}
@@ -33,6 +51,6 @@ const ProjectCards = ({ projectsData }) => {
       ))}
     </div>
   );
-}
+};
 
-export default ProjectCards
+export default ProjectCards;
