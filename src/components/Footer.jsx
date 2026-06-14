@@ -28,18 +28,19 @@ const handles = [
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col justify-center font-poppins items-center bg-black/30 border-t border-white/5 py-8 px-6 mt-12 text-neutral-400">
-      <div className="flex justify-between w-full max-w-7xl mx-auto">
+    <footer className="flex flex-col justify-center font-poppins items-center bg-black/30 border-t border-white/5 py-8 px-6 mt-10 text-neutral-400">
+      <div className="flex flex-col md:justify-between justify-center items-center w-full max-w-7xl mx-auto md:flex-row space-y-4">
         <h2 className="tracking-wide text-white font-bold text-xl">
           Developed with ❤️ by Rohit
         </h2>
         <div className="flex text-xl gap-6">
           {handles.map((social, idx) => (
-            <a 
-            href={social.href} 
-            key={idx} 
-            target="_blank"
-            className={`${social.hover} transition-all`}>
+            <a
+              href={social.href}
+              key={idx}
+              target="_blank"
+              className={`${social.hover} transition-all`}
+            >
               {social.icon}
             </a>
           ))}
