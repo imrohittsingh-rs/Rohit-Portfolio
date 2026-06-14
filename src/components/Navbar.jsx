@@ -18,7 +18,7 @@ const Navbar = () => {
         smooth={true}
         duration={500}
         spy={true}
-        offset={-86}
+        offset={-90}
         className="cursor-pointer transition-transform hover:scale-105"
       >
         <img
@@ -34,7 +34,7 @@ const Navbar = () => {
           smooth={true}
           duration={500}
           spy={true}
-          offset={-86}
+          offset={-90}
           activeClass={active}
           className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300"
         >
