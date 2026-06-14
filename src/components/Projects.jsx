@@ -30,8 +30,7 @@ const projectsData = [
       { name: "NodeJS", color: "text-orange-300" },
     ],
     image: shortlyImage,
-    source_code_link:
-      "https://github.com/imrohittsingh-rs/backend/tree/main/SHORT-URL",
+    source_code_link: "https://github.com/imrohittsingh-rs/shortly",
     demo_link: "",
   },
   {
@@ -69,7 +68,7 @@ const Projects = () => {
           <a
             href="https://github.com/imrohittsingh-rs"
             target="_blank"
-            className="inline-block bg-linear-to-br from-blue-300 to-blue-600 hover:scale-110 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out cursor-pointer tracking-wide "
+            className="inline-block bg-linear-to-br from-blue-400 to-blue-600 hover:scale-110 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out cursor-pointer tracking-wide "
           >
             View More →
           </a>
