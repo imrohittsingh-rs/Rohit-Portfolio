@@ -51,7 +51,7 @@ const Contact = () => {
     >
       <motion.div
         initial={{
-          x: -100,
+          x: -60,
           scale: 0.9,
           opacity: 0,
         }}
@@ -60,7 +60,7 @@ const Contact = () => {
           scale: 1,
           opacity: 1,
         }}
-        viewport={{ once: Infinity, amount: 0.4 }}
+        viewport={{ once: false, amount: 0.4 }}
         transition={{
           ease: "easeOut",
           duration: 0.6,
