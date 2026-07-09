@@ -1,7 +1,7 @@
 import React from "react";
 import typeMasterImage from "../assets/typeMaster.png";
 import shortlyImage from "../assets/shortly.png";
-import blogifyImage from "../assets/blogify.png";
+import blogisphereImage from "../assets/blogisphere.png";
 import ProjectCards from "./ProjectCards";
 
 const projectsData = [
@@ -34,20 +34,19 @@ const projectsData = [
     demo_link: "https://squishurl.vercel.app/",
   },
   {
-    title: "Blogify",
+    title: "BlogiSphere",
     description:
       "A simple blogging platform where users can create, edit, and delete blog posts. It features a clean and modern UI with a focus on user experience.",
     tags: [
       { name: "React", color: "text-blue-600 dark:text-blue-300" },
-      { name: "Tailwind CSS", color: "text-purple-600 dark:text-purple-300" },
+      { name: "Bootstrap", color: "text-purple-600 dark:text-purple-300" },
       { name: "ExpressJS", color: "text-emerald-700 dark:text-green-200" },
       { name: "MongoDB", color: "text-green-600 dark:text-green-500" },
       { name: "NodeJS", color: "text-amber-600 dark:text-orange-300" },
     ],
-    image: blogifyImage,
-    source_code_link:
-      "https://github.com/imrohittsingh-rs/backend/tree/main/BLOG-APP",
-    demo_link: "",
+    image: blogisphereImage,
+    source_code_link: "https://github.com/imrohittsingh-rs/blogisphere",
+    demo_link: "https://blogisphere.up.railway.app/",
   },
 ];
 
