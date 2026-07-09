@@ -31,7 +31,7 @@ const projectsData = [
     ],
     image: shortlyImage,
     source_code_link: "https://github.com/imrohittsingh-rs/squishurl",
-    demo_link: "https://squishurl.vercel.app/",
+    demo_link: "https://squishurl.onrender.com/",
   },
   {
     title: "BlogiSphere",
@@ -46,7 +46,7 @@ const projectsData = [
     ],
     image: blogisphereImage,
     source_code_link: "https://github.com/imrohittsingh-rs/blogisphere",
-    demo_link: "https://blogisphere.up.railway.app/",
+    demo_link: "https://blogisphere.onrender.com/",
   },
 ];
 
