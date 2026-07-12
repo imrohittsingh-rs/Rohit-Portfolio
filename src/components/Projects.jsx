@@ -31,7 +31,7 @@ const projectsData = [
     ],
     image: shortlyImage,
     source_code_link: "https://github.com/imrohittsingh-rs/squishurl",
-    demo_link: "https://squishurl.onrender.com/",
+    demo_link: "https://squishurl.vercel.app/",
   },
   {
     title: "BlogiSphere",
@@ -39,14 +39,14 @@ const projectsData = [
       "A simple blogging platform where users can create, edit, and delete blog posts. It features a clean and modern UI with a focus on user experience.",
     tags: [
       { name: "React", color: "text-blue-600 dark:text-blue-300" },
-      { name: "Bootstrap", color: "text-purple-600 dark:text-purple-300" },
+      { name: "Tailwind CSS", color: "text-purple-600 dark:text-purple-300" },
       { name: "ExpressJS", color: "text-emerald-700 dark:text-green-200" },
       { name: "MongoDB", color: "text-green-600 dark:text-green-500" },
       { name: "NodeJS", color: "text-amber-600 dark:text-orange-300" },
     ],
     image: blogisphereImage,
     source_code_link: "https://github.com/imrohittsingh-rs/blogisphere",
-    demo_link: "https://blogisphere.onrender.com/",
+    demo_link: "https://blogisphere.vercel.app/",
   },
 ];
 
