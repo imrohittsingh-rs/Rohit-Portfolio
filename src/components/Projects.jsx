@@ -1,23 +1,10 @@
 import React from "react";
 import typeMasterImage from "../assets/typeMaster.png";
-import shortlyImage from "../assets/shortly.png";
+import squishURLImage from "../assets/squishURL.png";
 import blogisphereImage from "../assets/blogisphere.png";
 import ProjectCards from "./ProjectCards";
 
 const projectsData = [
-  {
-    title: "TypeMaster",
-    description:
-      "A typing speed test application to improve your typing skills and accuracy. It provides real-time feedback and tracks your progress over time. It gives your result in WPM and accuracy percentage along with total correct and incorrect characters.",
-    tags: [
-      { name: "HTML", color: "text-orange-600 dark:text-orange-400" },
-      { name: "CSS", color: "text-blue-600 dark:text-blue-300" },
-      { name: "JavaScript", color: "text-yellow-600 dark:text-yellow-300" },
-    ],
-    image: typeMasterImage,
-    source_code_link: "https://github.com/imrohittsingh-rs/TypeMaster",
-    demo_link: "https://imrohittsingh-rs.github.io/TypeMaster/",
-  },
   {
     title: "SquishUrl",
     description:
@@ -29,7 +16,7 @@ const projectsData = [
       { name: "MongoDB", color: "text-green-600 dark:text-green-500" },
       { name: "NodeJS", color: "text-amber-600 dark:text-orange-300" },
     ],
-    image: shortlyImage,
+    image: squishURLImage,
     source_code_link: "https://github.com/imrohittsingh-rs/squishurl",
     demo_link: "https://squishurl.vercel.app/",
   },
@@ -47,6 +34,19 @@ const projectsData = [
     image: blogisphereImage,
     source_code_link: "https://github.com/imrohittsingh-rs/blogisphere",
     demo_link: "https://blogisphere.vercel.app/",
+  },
+  {
+    title: "TypeMaster",
+    description:
+      "A typing speed test application to improve your typing skills and accuracy. It provides real-time feedback and tracks your progress over time. It gives your result in WPM and accuracy percentage along with total correct and incorrect characters.",
+    tags: [
+      { name: "HTML", color: "text-orange-600 dark:text-orange-400" },
+      { name: "CSS", color: "text-blue-600 dark:text-blue-300" },
+      { name: "JavaScript", color: "text-yellow-600 dark:text-yellow-300" },
+    ],
+    image: typeMasterImage,
+    source_code_link: "https://github.com/imrohittsingh-rs/TypeMaster",
+    demo_link: "https://imrohittsingh-rs.github.io/TypeMaster/",
   },
 ];
 

@@ -19,9 +19,12 @@ import {
   SiNumpy,
   SiPandas,
   SiExpress,
-  SiHtml5,
   SiVercel,
+  SiCloudinary,
+  SiRender,
+  SiPostman,
 } from "react-icons/si";
+
 
 import { RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
@@ -51,6 +54,7 @@ const techStack = [
     items: [
       { name: "NodeJS", icon: <FaNodeJs /> },
       { name: "ExpressJS", icon: <SiExpress /> },
+      { name: "Cloudinary", icon: <SiCloudinary /> },  
     ],
   },
   {
@@ -74,6 +78,8 @@ const techStack = [
       { name: "Github", icon: <FaGithub /> },
       { name: "VScode", icon: <VscVscode /> },
       { name: "Vercel ", icon: <SiVercel /> },
+      { name: "Render", icon: <SiRender /> },
+      { name: "Postman", icon: <SiPostman /> },
     ],
   },
 ];
@@ -98,16 +104,16 @@ const Skills = () => {
               {cat.category}
             </h3>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-4">
               {cat.items.map((ele, itemIdx) => (
                 <div
                   key={itemIdx}
-                  className="flex flex-col items-center justify-center text-center gap-2 p-4 bg-slate-50 dark:bg-gray-900 border border-slate-100 dark:border-gray-800 rounded-xl text-slate-600 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-gray-800 hover:text-slate-900 dark:hover:text-white hover:border-slate-200 dark:hover:border-gray-700 transition-all duration-300 cursor-default group"
+                  className="flex flex-col items-center justify-center text-center gap-2 p-3 sm:p-4 bg-slate-50 dark:bg-gray-900 border border-slate-100 dark:border-gray-800 rounded-xl text-slate-600 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-gray-800 hover:text-slate-900 dark:hover:text-white hover:border-slate-200 dark:hover:border-gray-700 transition-all duration-300 cursor-default group"
                 >
                   <span className="text-2xl transition-transform duration-300 group-hover:scale-110">
                     {ele.icon}
                   </span>
-                  <span className="text-sm md:text-base font-medium tracking-wide">
+                  <span className="text-xs sm:text-sm font-medium tracking-wide">
                     {ele.name}
                   </span>
                 </div>

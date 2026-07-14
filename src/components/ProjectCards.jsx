@@ -14,7 +14,7 @@ const ProjectCards = ({ projectsData }) => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-48 object-cover group-hover:blur-md transition-all duration-200 ease-in"
+              className="w-full h-48 object-cover object-top group-hover:blur-md transition-all duration-200 ease-in"
             />
             <a
               href={project.source_code_link}
