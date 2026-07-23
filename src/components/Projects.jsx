@@ -55,7 +55,10 @@ const Projects = () => {
     <section id="projects" className="py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-14">
         <h2 className="text-slate-900 dark:text-white font-extrabold text-3xl sm:text-4xl md:text-5xl text-center mb-8 tracking-tight">
-          My Projects
+          💻 My{" "}
+          <span className="text-amber-500 dark:text-yellow-400 drop-shadow-[0_0_15px_rgba(245,158,11,0.15)] dark:drop-shadow-[0_0_15px_rgba(250,204,21,0.15)]">
+            Projects
+          </span>
         </h2>
         <p className="text-slate-600 dark:text-gray-400 text-lg max-w-2xl mx-auto text-center mb-12">
           A collection of my projects that reflect real-world problem solving,

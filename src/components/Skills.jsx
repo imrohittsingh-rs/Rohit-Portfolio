@@ -23,8 +23,9 @@ import {
   SiCloudinary,
   SiRender,
   SiPostman,
+  SiFirebase,
+  SiJsonwebtokens
 } from "react-icons/si";
-
 
 import { RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
@@ -54,7 +55,9 @@ const techStack = [
     items: [
       { name: "NodeJS", icon: <FaNodeJs /> },
       { name: "ExpressJS", icon: <SiExpress /> },
-      { name: "Cloudinary", icon: <SiCloudinary /> },  
+      { name: "Cloudinary", icon: <SiCloudinary /> },
+      { name: "Firebase", icon: <SiFirebase /> },
+      { name: "JWT", icon: <SiJsonwebtokens/> }
     ],
   },
   {

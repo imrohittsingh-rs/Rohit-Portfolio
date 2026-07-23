@@ -1,6 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
+@plugin "daisyui";
 @theme {
   --font-poppins: "Poppins", sans-serif;
 }
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Synchronize the floating links overlay with the DaisyUI 3D tilt and scale */
+.hover-3d > .tilt-sibling {
+  transform: rotate3d(var(--transform), 0, 10deg);
+  transition: transform var(--ease) 0.5s, scale var(--ease) 0.5s;
+  grid-area: 1 / 1 / 4 / 4;
+  z-index: 10 !important;
+  scale: 1 !important;
+  isolation: auto !important;
+}
+
+.hover-3d:hover > .tilt-sibling {
+  scale: 1.05 !important;
+}
+
+/* Maintain 3D tilt when hovering over the GitHub and Demo icons */
+.hover-3d:has(.github-link:hover) {
+  --transform: 0, 1;
+  --shine: 0% 100%;
+  --shadow: -.5rem 0rem;
+}
+
+.hover-3d:has(.demo-link:hover) {
+  --transform: 0, -1;
+  --shine: 200% 100%;
+  --shadow: .5rem 0rem;
+}
